@@ -1,26 +1,181 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11760" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uPe-fJ-Vc3">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11755"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Um-td-QxY">
+                                <rect key="frame" x="28" y="301" width="354.66666666666669" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="BUb-Dq-XuM"/>
+                                    <constraint firstAttribute="height" constant="50" id="zQN-d1-ZNJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <state key="normal" title="Tire">
+                                    <color key="titleColor" red="1" green="0.71151501515782911" blue="0.38511615050778381" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9E6-U8-9ia" kind="show" identifier="tire" id="oee-wC-mAT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zlW-VZ-g8Q">
+                                <rect key="frame" x="174.66666666666666" y="166" width="65" height="50"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="VIW-Et-npT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <state key="normal" title="OilLife">
+                                    <color key="titleColor" red="1" green="0.7326035784237952" blue="0.34445177899414681" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9E6-U8-9ia" kind="show" identifier="oil" id="qWB-Ak-t2d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4p2-K0-2nr">
+                                <rect key="frame" x="28" y="236" width="354.66666666666669" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Kwl-H8-6jA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <state key="normal" title="Coolant">
+                                    <color key="titleColor" red="1" green="0.7326035784237952" blue="0.34445177899414681" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9E6-U8-9ia" kind="show" identifier="coolant" id="xoG-7K-M3J"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WhQ-FQ-WFC">
+                                <rect key="frame" x="28" y="356" width="354.66666666666669" height="50"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <state key="normal" title="FuelLevel">
+                                    <color key="titleColor" red="1" green="0.7326035784237952" blue="0.34445177899414681" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9E6-U8-9ia" kind="show" identifier="fuel" id="Ahk-0I-mbH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xL-bm-vaE">
+                                <rect key="frame" x="136" y="434" width="139" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <state key="normal" title="StartEngine">
+                                    <color key="titleColor" red="1" green="0.73260357840000001" blue="0.34445177900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Um-td-QxY" firstAttribute="leading" secondItem="WhQ-FQ-WFC" secondAttribute="leading" id="0ys-YW-EcR"/>
+                            <constraint firstItem="WhQ-FQ-WFC" firstAttribute="top" secondItem="1Um-td-QxY" secondAttribute="bottom" constant="5" id="6XV-z8-tTz"/>
+                            <constraint firstItem="zlW-VZ-g8Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EjF-CM-eEl"/>
+                            <constraint firstItem="4p2-K0-2nr" firstAttribute="leading" secondItem="1Um-td-QxY" secondAttribute="leading" id="IPp-sY-jZU"/>
+                            <constraint firstItem="4p2-K0-2nr" firstAttribute="trailing" secondItem="1Um-td-QxY" secondAttribute="trailing" id="ITc-L8-Egw"/>
+                            <constraint firstItem="4p2-K0-2nr" firstAttribute="top" secondItem="zlW-VZ-g8Q" secondAttribute="bottom" constant="20" id="LBw-4a-gMM"/>
+                            <constraint firstItem="zlW-VZ-g8Q" firstAttribute="height" secondItem="4p2-K0-2nr" secondAttribute="height" id="W2O-gB-42J"/>
+                            <constraint firstItem="1Um-td-QxY" firstAttribute="trailing" secondItem="WhQ-FQ-WFC" secondAttribute="trailing" id="jU9-TF-grL"/>
+                            <constraint firstItem="1Um-td-QxY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="k58-Iz-JaG"/>
+                            <constraint firstItem="1Um-td-QxY" firstAttribute="top" secondItem="4p2-K0-2nr" secondAttribute="bottom" constant="15" id="ntD-au-j7y"/>
+                            <constraint firstItem="zlW-VZ-g8Q" firstAttribute="centerX" secondItem="WhQ-FQ-WFC" secondAttribute="centerX" constant="1.5" id="sMd-97-ppL"/>
+                            <constraint firstItem="zlW-VZ-g8Q" firstAttribute="width" secondItem="WhQ-FQ-WFC" secondAttribute="height" multiplier="13:10" id="xIW-pe-QnK"/>
+                            <constraint firstItem="zlW-VZ-g8Q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="102" id="z48-Qx-LEE"/>
+                            <constraint firstItem="zlW-VZ-g8Q" firstAttribute="height" secondItem="WhQ-FQ-WFC" secondAttribute="height" id="zf3-ht-wMG"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="cK4-qj-u60">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="keyPath">
+                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-62.318840579710148" y="169.56521739130437"/>
+        </scene>
+        <!--Guage-->
+        <scene sceneID="2tb-w5-hHR">
+            <objects>
+                <viewController title="Guage" id="9E6-U8-9ia" customClass="GauageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gbc-sE-bcy"/>
+                        <viewControllerLayoutGuide type="bottom" id="2At-Do-NP0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wm3-bR-L5q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1zt-kt-KMX" customClass="WMGaugeView">
+                                <rect key="frame" x="47" y="208" width="320" height="320"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="YLg-nc-5tw"/>
+                                    <constraint firstAttribute="width" constant="320" id="hgK-S2-ejW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1zt-kt-KMX" firstAttribute="centerY" secondItem="Wm3-bR-L5q" secondAttribute="centerY" id="3YI-IN-fAb"/>
+                            <constraint firstItem="1zt-kt-KMX" firstAttribute="centerX" secondItem="Wm3-bR-L5q" secondAttribute="centerX" id="fUC-Dm-lTk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vpX-Fx-Blb">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="keyPath">
+                                <color key="value" red="0.99631871727748689" green="0.99631871727748689" blue="0.99631871727748689" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="gaugeView" destination="1zt-kt-KMX" id="9Sl-GG-XJP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ku-7U-31x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="613.60000000000002" y="169.56521739130437"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yyk-i5-WqY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uPe-fJ-Vc3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="pEx-0Y-dl3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="xsd-Qw-qTG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5qK-bm-1wE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-742" y="181"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="oee-wC-mAT"/>
+    </inferredMetricsTieBreakers>
 </document>

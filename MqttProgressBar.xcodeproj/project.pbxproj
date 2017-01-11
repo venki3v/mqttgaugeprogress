@@ -15,6 +15,27 @@
 		FD7BCFE11E2099DD00416394 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD7BCFDF1E2099DD00416394 /* LaunchScreen.storyboard */; };
 		FD7BCFEC1E2099DD00416394 /* MqttProgressBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7BCFEB1E2099DD00416394 /* MqttProgressBarTests.m */; };
 		FD7BCFF71E2099DD00416394 /* MqttProgressBarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7BCFF61E2099DD00416394 /* MqttProgressBarUITests.m */; };
+		FD7BD00C1E209A5300416394 /* WMGaugeView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7BD0061E209A5300416394 /* WMGaugeView.m */; };
+		FD7BD00D1E209A5300416394 /* WMGaugeViewStyle3D.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7BD0091E209A5300416394 /* WMGaugeViewStyle3D.m */; };
+		FD7BD00E1E209A5300416394 /* WMGaugeViewStyleFlatThin.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7BD00B1E209A5300416394 /* WMGaugeViewStyleFlatThin.m */; };
+		FD7BD0111E209A8C00416394 /* GauageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7BD0101E209A8C00416394 /* GauageViewController.m */; };
+		FD7BD0361E20A4AE00416394 /* MQTTCFSocketDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7BD0141E20A4AE00416394 /* MQTTCFSocketDecoder.m */; };
+		FD7BD0371E20A4AE00416394 /* MQTTCFSocketEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7BD0161E20A4AE00416394 /* MQTTCFSocketEncoder.m */; };
+		FD7BD0381E20A4AE00416394 /* MQTTCFSocketTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7BD0181E20A4AE00416394 /* MQTTCFSocketTransport.m */; };
+		FD7BD0391E20A4AE00416394 /* MQTTCoreDataPersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7BD01B1E20A4AE00416394 /* MQTTCoreDataPersistence.m */; };
+		FD7BD03A1E20A4AE00416394 /* MQTTDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7BD01D1E20A4AE00416394 /* MQTTDecoder.m */; };
+		FD7BD03B1E20A4AE00416394 /* MQTTInMemoryPersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7BD01F1E20A4AE00416394 /* MQTTInMemoryPersistence.m */; };
+		FD7BD03C1E20A4AE00416394 /* MQTTMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7BD0221E20A4AE00416394 /* MQTTMessage.m */; };
+		FD7BD03D1E20A4AE00416394 /* MQTTSession.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7BD0251E20A4AE00416394 /* MQTTSession.m */; };
+		FD7BD03E1E20A4AE00416394 /* MQTTSessionLegacy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7BD0271E20A4AE00416394 /* MQTTSessionLegacy.m */; };
+		FD7BD03F1E20A4AE00416394 /* MQTTSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7BD0291E20A4AE00416394 /* MQTTSessionManager.m */; };
+		FD7BD0401E20A4AE00416394 /* MQTTSessionSynchron.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7BD02B1E20A4AE00416394 /* MQTTSessionSynchron.m */; };
+		FD7BD0411E20A4AE00416394 /* MQTTSSLSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7BD02D1E20A4AE00416394 /* MQTTSSLSecurityPolicy.m */; };
+		FD7BD0421E20A4AE00416394 /* MQTTSSLSecurityPolicyDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7BD02F1E20A4AE00416394 /* MQTTSSLSecurityPolicyDecoder.m */; };
+		FD7BD0431E20A4AE00416394 /* MQTTSSLSecurityPolicyEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7BD0311E20A4AE00416394 /* MQTTSSLSecurityPolicyEncoder.m */; };
+		FD7BD0441E20A4AE00416394 /* MQTTSSLSecurityPolicyTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7BD0331E20A4AE00416394 /* MQTTSSLSecurityPolicyTransport.m */; };
+		FD7BD0451E20A4AE00416394 /* MQTTTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7BD0351E20A4AE00416394 /* MQTTTransport.m */; };
+		FD7BD0481E20A80D00416394 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7BD0471E20A80D00416394 /* Data.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +72,52 @@
 		FD7BCFF21E2099DD00416394 /* MqttProgressBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MqttProgressBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD7BCFF61E2099DD00416394 /* MqttProgressBarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MqttProgressBarUITests.m; sourceTree = "<group>"; };
 		FD7BCFF81E2099DD00416394 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD7BD0051E209A5300416394 /* WMGaugeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMGaugeView.h; sourceTree = "<group>"; };
+		FD7BD0061E209A5300416394 /* WMGaugeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMGaugeView.m; sourceTree = "<group>"; };
+		FD7BD0071E209A5300416394 /* WMGaugeViewStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMGaugeViewStyle.h; sourceTree = "<group>"; };
+		FD7BD0081E209A5300416394 /* WMGaugeViewStyle3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMGaugeViewStyle3D.h; sourceTree = "<group>"; };
+		FD7BD0091E209A5300416394 /* WMGaugeViewStyle3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMGaugeViewStyle3D.m; sourceTree = "<group>"; };
+		FD7BD00A1E209A5300416394 /* WMGaugeViewStyleFlatThin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMGaugeViewStyleFlatThin.h; sourceTree = "<group>"; };
+		FD7BD00B1E209A5300416394 /* WMGaugeViewStyleFlatThin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMGaugeViewStyleFlatThin.m; sourceTree = "<group>"; };
+		FD7BD00F1E209A8C00416394 /* GauageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GauageViewController.h; sourceTree = "<group>"; };
+		FD7BD0101E209A8C00416394 /* GauageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GauageViewController.m; sourceTree = "<group>"; };
+		FD7BD0131E20A4AE00416394 /* MQTTCFSocketDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTCFSocketDecoder.h; sourceTree = "<group>"; };
+		FD7BD0141E20A4AE00416394 /* MQTTCFSocketDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTTCFSocketDecoder.m; sourceTree = "<group>"; };
+		FD7BD0151E20A4AE00416394 /* MQTTCFSocketEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTCFSocketEncoder.h; sourceTree = "<group>"; };
+		FD7BD0161E20A4AE00416394 /* MQTTCFSocketEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTTCFSocketEncoder.m; sourceTree = "<group>"; };
+		FD7BD0171E20A4AE00416394 /* MQTTCFSocketTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTCFSocketTransport.h; sourceTree = "<group>"; };
+		FD7BD0181E20A4AE00416394 /* MQTTCFSocketTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTTCFSocketTransport.m; sourceTree = "<group>"; };
+		FD7BD0191E20A4AE00416394 /* MQTTClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTClient.h; sourceTree = "<group>"; };
+		FD7BD01A1E20A4AE00416394 /* MQTTCoreDataPersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTCoreDataPersistence.h; sourceTree = "<group>"; };
+		FD7BD01B1E20A4AE00416394 /* MQTTCoreDataPersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTTCoreDataPersistence.m; sourceTree = "<group>"; };
+		FD7BD01C1E20A4AE00416394 /* MQTTDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTDecoder.h; sourceTree = "<group>"; };
+		FD7BD01D1E20A4AE00416394 /* MQTTDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTTDecoder.m; sourceTree = "<group>"; };
+		FD7BD01E1E20A4AE00416394 /* MQTTInMemoryPersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTInMemoryPersistence.h; sourceTree = "<group>"; };
+		FD7BD01F1E20A4AE00416394 /* MQTTInMemoryPersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTTInMemoryPersistence.m; sourceTree = "<group>"; };
+		FD7BD0201E20A4AE00416394 /* MQTTLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTLog.h; sourceTree = "<group>"; };
+		FD7BD0211E20A4AE00416394 /* MQTTMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTMessage.h; sourceTree = "<group>"; };
+		FD7BD0221E20A4AE00416394 /* MQTTMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTTMessage.m; sourceTree = "<group>"; };
+		FD7BD0231E20A4AE00416394 /* MQTTPersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTPersistence.h; sourceTree = "<group>"; };
+		FD7BD0241E20A4AE00416394 /* MQTTSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTSession.h; sourceTree = "<group>"; };
+		FD7BD0251E20A4AE00416394 /* MQTTSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTTSession.m; sourceTree = "<group>"; };
+		FD7BD0261E20A4AE00416394 /* MQTTSessionLegacy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTSessionLegacy.h; sourceTree = "<group>"; };
+		FD7BD0271E20A4AE00416394 /* MQTTSessionLegacy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTTSessionLegacy.m; sourceTree = "<group>"; };
+		FD7BD0281E20A4AE00416394 /* MQTTSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTSessionManager.h; sourceTree = "<group>"; };
+		FD7BD0291E20A4AE00416394 /* MQTTSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTTSessionManager.m; sourceTree = "<group>"; };
+		FD7BD02A1E20A4AE00416394 /* MQTTSessionSynchron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTSessionSynchron.h; sourceTree = "<group>"; };
+		FD7BD02B1E20A4AE00416394 /* MQTTSessionSynchron.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTTSessionSynchron.m; sourceTree = "<group>"; };
+		FD7BD02C1E20A4AE00416394 /* MQTTSSLSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTSSLSecurityPolicy.h; sourceTree = "<group>"; };
+		FD7BD02D1E20A4AE00416394 /* MQTTSSLSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTTSSLSecurityPolicy.m; sourceTree = "<group>"; };
+		FD7BD02E1E20A4AE00416394 /* MQTTSSLSecurityPolicyDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTSSLSecurityPolicyDecoder.h; sourceTree = "<group>"; };
+		FD7BD02F1E20A4AE00416394 /* MQTTSSLSecurityPolicyDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTTSSLSecurityPolicyDecoder.m; sourceTree = "<group>"; };
+		FD7BD0301E20A4AE00416394 /* MQTTSSLSecurityPolicyEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTSSLSecurityPolicyEncoder.h; sourceTree = "<group>"; };
+		FD7BD0311E20A4AE00416394 /* MQTTSSLSecurityPolicyEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTTSSLSecurityPolicyEncoder.m; sourceTree = "<group>"; };
+		FD7BD0321E20A4AE00416394 /* MQTTSSLSecurityPolicyTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTSSLSecurityPolicyTransport.h; sourceTree = "<group>"; };
+		FD7BD0331E20A4AE00416394 /* MQTTSSLSecurityPolicyTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTTSSLSecurityPolicyTransport.m; sourceTree = "<group>"; };
+		FD7BD0341E20A4AE00416394 /* MQTTTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTTransport.h; sourceTree = "<group>"; };
+		FD7BD0351E20A4AE00416394 /* MQTTTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTTTransport.m; sourceTree = "<group>"; };
+		FD7BD0461E20A80D00416394 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
+		FD7BD0471E20A80D00416394 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +168,16 @@
 		FD7BCFD01E2099DD00416394 /* MqttProgressBar */ = {
 			isa = PBXGroup;
 			children = (
+				FD7BD0121E20A49500416394 /* MQTT */,
+				FD7BD0041E209A2E00416394 /* WMGaugeView */,
 				FD7BCFD41E2099DD00416394 /* AppDelegate.h */,
 				FD7BCFD51E2099DD00416394 /* AppDelegate.m */,
+				FD7BD00F1E209A8C00416394 /* GauageViewController.h */,
+				FD7BD0101E209A8C00416394 /* GauageViewController.m */,
 				FD7BCFD71E2099DD00416394 /* ViewController.h */,
 				FD7BCFD81E2099DD00416394 /* ViewController.m */,
+				FD7BD0461E20A80D00416394 /* Data.h */,
+				FD7BD0471E20A80D00416394 /* Data.m */,
 				FD7BCFDA1E2099DD00416394 /* Main.storyboard */,
 				FD7BCFDD1E2099DD00416394 /* Assets.xcassets */,
 				FD7BCFDF1E2099DD00416394 /* LaunchScreen.storyboard */,
@@ -138,6 +211,62 @@
 				FD7BCFF81E2099DD00416394 /* Info.plist */,
 			);
 			path = MqttProgressBarUITests;
+			sourceTree = "<group>";
+		};
+		FD7BD0041E209A2E00416394 /* WMGaugeView */ = {
+			isa = PBXGroup;
+			children = (
+				FD7BD0051E209A5300416394 /* WMGaugeView.h */,
+				FD7BD0061E209A5300416394 /* WMGaugeView.m */,
+				FD7BD0071E209A5300416394 /* WMGaugeViewStyle.h */,
+				FD7BD0081E209A5300416394 /* WMGaugeViewStyle3D.h */,
+				FD7BD0091E209A5300416394 /* WMGaugeViewStyle3D.m */,
+				FD7BD00A1E209A5300416394 /* WMGaugeViewStyleFlatThin.h */,
+				FD7BD00B1E209A5300416394 /* WMGaugeViewStyleFlatThin.m */,
+			);
+			name = WMGaugeView;
+			sourceTree = "<group>";
+		};
+		FD7BD0121E20A49500416394 /* MQTT */ = {
+			isa = PBXGroup;
+			children = (
+				FD7BD0131E20A4AE00416394 /* MQTTCFSocketDecoder.h */,
+				FD7BD0141E20A4AE00416394 /* MQTTCFSocketDecoder.m */,
+				FD7BD0151E20A4AE00416394 /* MQTTCFSocketEncoder.h */,
+				FD7BD0161E20A4AE00416394 /* MQTTCFSocketEncoder.m */,
+				FD7BD0171E20A4AE00416394 /* MQTTCFSocketTransport.h */,
+				FD7BD0181E20A4AE00416394 /* MQTTCFSocketTransport.m */,
+				FD7BD0191E20A4AE00416394 /* MQTTClient.h */,
+				FD7BD01A1E20A4AE00416394 /* MQTTCoreDataPersistence.h */,
+				FD7BD01B1E20A4AE00416394 /* MQTTCoreDataPersistence.m */,
+				FD7BD01C1E20A4AE00416394 /* MQTTDecoder.h */,
+				FD7BD01D1E20A4AE00416394 /* MQTTDecoder.m */,
+				FD7BD01E1E20A4AE00416394 /* MQTTInMemoryPersistence.h */,
+				FD7BD01F1E20A4AE00416394 /* MQTTInMemoryPersistence.m */,
+				FD7BD0201E20A4AE00416394 /* MQTTLog.h */,
+				FD7BD0211E20A4AE00416394 /* MQTTMessage.h */,
+				FD7BD0221E20A4AE00416394 /* MQTTMessage.m */,
+				FD7BD0231E20A4AE00416394 /* MQTTPersistence.h */,
+				FD7BD0241E20A4AE00416394 /* MQTTSession.h */,
+				FD7BD0251E20A4AE00416394 /* MQTTSession.m */,
+				FD7BD0261E20A4AE00416394 /* MQTTSessionLegacy.h */,
+				FD7BD0271E20A4AE00416394 /* MQTTSessionLegacy.m */,
+				FD7BD0281E20A4AE00416394 /* MQTTSessionManager.h */,
+				FD7BD0291E20A4AE00416394 /* MQTTSessionManager.m */,
+				FD7BD02A1E20A4AE00416394 /* MQTTSessionSynchron.h */,
+				FD7BD02B1E20A4AE00416394 /* MQTTSessionSynchron.m */,
+				FD7BD02C1E20A4AE00416394 /* MQTTSSLSecurityPolicy.h */,
+				FD7BD02D1E20A4AE00416394 /* MQTTSSLSecurityPolicy.m */,
+				FD7BD02E1E20A4AE00416394 /* MQTTSSLSecurityPolicyDecoder.h */,
+				FD7BD02F1E20A4AE00416394 /* MQTTSSLSecurityPolicyDecoder.m */,
+				FD7BD0301E20A4AE00416394 /* MQTTSSLSecurityPolicyEncoder.h */,
+				FD7BD0311E20A4AE00416394 /* MQTTSSLSecurityPolicyEncoder.m */,
+				FD7BD0321E20A4AE00416394 /* MQTTSSLSecurityPolicyTransport.h */,
+				FD7BD0331E20A4AE00416394 /* MQTTSSLSecurityPolicyTransport.m */,
+				FD7BD0341E20A4AE00416394 /* MQTTTransport.h */,
+				FD7BD0351E20A4AE00416394 /* MQTTTransport.m */,
+			);
+			name = MQTT;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +336,7 @@
 				TargetAttributes = {
 					FD7BCFCD1E2099DD00416394 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = F83TCGRJ4C;
 						ProvisioningStyle = Automatic;
 					};
 					FD7BCFE61E2099DD00416394 = {
@@ -273,9 +403,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD7BD00C1E209A5300416394 /* WMGaugeView.m in Sources */,
 				FD7BCFD91E2099DD00416394 /* ViewController.m in Sources */,
+				FD7BD0371E20A4AE00416394 /* MQTTCFSocketEncoder.m in Sources */,
+				FD7BD0381E20A4AE00416394 /* MQTTCFSocketTransport.m in Sources */,
 				FD7BCFD61E2099DD00416394 /* AppDelegate.m in Sources */,
 				FD7BCFD31E2099DD00416394 /* main.m in Sources */,
+				FD7BD0111E209A8C00416394 /* GauageViewController.m in Sources */,
+				FD7BD0431E20A4AE00416394 /* MQTTSSLSecurityPolicyEncoder.m in Sources */,
+				FD7BD03C1E20A4AE00416394 /* MQTTMessage.m in Sources */,
+				FD7BD03F1E20A4AE00416394 /* MQTTSessionManager.m in Sources */,
+				FD7BD0441E20A4AE00416394 /* MQTTSSLSecurityPolicyTransport.m in Sources */,
+				FD7BD0481E20A80D00416394 /* Data.m in Sources */,
+				FD7BD0411E20A4AE00416394 /* MQTTSSLSecurityPolicy.m in Sources */,
+				FD7BD03D1E20A4AE00416394 /* MQTTSession.m in Sources */,
+				FD7BD0421E20A4AE00416394 /* MQTTSSLSecurityPolicyDecoder.m in Sources */,
+				FD7BD0391E20A4AE00416394 /* MQTTCoreDataPersistence.m in Sources */,
+				FD7BD03A1E20A4AE00416394 /* MQTTDecoder.m in Sources */,
+				FD7BD0451E20A4AE00416394 /* MQTTTransport.m in Sources */,
+				FD7BD00E1E209A5300416394 /* WMGaugeViewStyleFlatThin.m in Sources */,
+				FD7BD03B1E20A4AE00416394 /* MQTTInMemoryPersistence.m in Sources */,
+				FD7BD03E1E20A4AE00416394 /* MQTTSessionLegacy.m in Sources */,
+				FD7BD0361E20A4AE00416394 /* MQTTCFSocketDecoder.m in Sources */,
+				FD7BD0401E20A4AE00416394 /* MQTTSessionSynchron.m in Sources */,
+				FD7BD00D1E209A5300416394 /* WMGaugeViewStyle3D.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +575,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F83TCGRJ4C;
 				INFOPLIST_FILE = MqttProgressBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.mqtt.MqttProgressBar;
@@ -435,6 +587,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F83TCGRJ4C;
 				INFOPLIST_FILE = MqttProgressBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.mqtt.MqttProgressBar;
@@ -507,6 +660,7 @@
 				FD7BCFFD1E2099DD00416394 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD7BCFFE1E2099DD00416394 /* Build configuration list for PBXNativeTarget "MqttProgressBarTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +669,7 @@
 				FD7BD0001E2099DD00416394 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD7BD0011E2099DD00416394 /* Build configuration list for PBXNativeTarget "MqttProgressBarUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +678,7 @@
 				FD7BD0031E2099DD00416394 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
